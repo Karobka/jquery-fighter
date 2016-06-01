@@ -23,6 +23,16 @@ $(document).ready(function() {
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
 	});
+	$(document).keydown(function() {
+		if (event.which == 88) {
+			$(".ryu-still").hide();
+			$(".ryu-cool").show();
+		}
+		$(this).keyup(function() {
+			$(".ryu-cool").hide();
+			$(".ryu-still").show();
+		});
+	});
 
 
 });
