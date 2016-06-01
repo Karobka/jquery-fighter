@@ -68,7 +68,7 @@ body {
     float: right;
 }
 
-.hadouken {
+.hadouken, .hulk-hadouken {
 	background-image: url("../images/hadouken.gif");
 	width: 156px;
 	height: 90px;
@@ -78,4 +78,8 @@ body {
 	z-index: 10;
 	top: 170px;
 	left: 615px;
+}
+
+.hulk-hadouken {
+	float: right;
 }

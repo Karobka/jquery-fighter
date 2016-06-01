@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".ryu, .hulk-ryu").mouseenter(function() {
-		$(".ryu-still, .hulk-still").hide();
+		$(".ryu-still, .hulk-ryu-still").hide();
 		$(".ryu-ready, .hulk-ryu-ready").show();
 	})
 	.mouseleave(function() {
@@ -25,11 +25,13 @@ $(document).ready(function() {
 		});
 		
 	})
+	/**When mouse is released hide throwing and show ready pics**/
 	.mouseup(function() {
-		$(".ryu-throwing").hide();
-		$(".ryu-ready").show();
+		$(".ryu-throwing, .hulk-ryu-throwing").hide();
+		$(".ryu-ready, .hulk-ryu-ready").show();
 	});
 
+	/**Listen for the X key**/
 	$(document).keydown(function() {
 		if (event.which == 88) {
 			$(".ryu-still").hide();
@@ -43,6 +45,8 @@ $(document).ready(function() {
 	});
 	
 	/** HULK RYU **/
+
+	/**Listen for the M key**/
 	$(document).keydown(function() {
 		if (event.which == 77) {
 			$(".hulk-ryu-still").hide();
