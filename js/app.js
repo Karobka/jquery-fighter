@@ -17,6 +17,11 @@ $(document).ready(function() {
 			$(this).hide();
 			$(this).css("left", "615px");
 		});
+		/**Here we grab the hadouken and "show" it then we "finish" the animation 
+		in case someone clicks before it has finished, and last we tell it to animate
+		the hadouken until its "right" value is 1020px.  "500" is how many miliseconds 
+		we want this to take. Then we toss in a function to hide the hadouken and 
+		set it back to its start posidion of 615px from the right.**/
 		$(".hulk-hadouken").finish().show().animate({
 			right: "1020px"
 		}, 500, function() {

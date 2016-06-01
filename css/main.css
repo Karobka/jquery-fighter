@@ -4,9 +4,17 @@ body {
 	background-color: #000000;
 }
 
+h2 {
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+	position: absolute;
+}
+
 .main {
-	background-color: #FFFFFF;
+	background-color: ;
 	margin-top: 110px;
+	margin-bottom: 110px;
 	padding-left: 100px;
 	min-width: 1200px;
 	height: 500px;
@@ -48,7 +56,8 @@ body {
 }
 
 .hulk-ryu {
-	filter: hue-rotate(180deg);
+	filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg); /* Chrome, Safari, Opera */
 	display: inline-block;
 	float: right;
 }
@@ -73,13 +82,18 @@ body {
 	width: 156px;
 	height: 90px;
 	display: none;
-	float: left;
 	position: absolute;
 	z-index: 10;
+
+}
+.hadouken {
+	float: left;
 	top: 170px;
 	left: 615px;
 }
 
 .hulk-hadouken {
 	float: right;
+	top: 170px;
+	right: 615px;
 }
